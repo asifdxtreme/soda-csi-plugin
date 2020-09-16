@@ -31,6 +31,13 @@ parameters:
  ### Call FLows
  ![](./Soda-CSI-Plugin-CallFLow.png)
  
+  
+ ### Highlights
+  - A simple design which let's user to patch the exsisting Third party CSI drivers deployment whithout any changes to actual CSI driver containers provided by TP vendors.
+  - All the side car containers which will be used by TP CSI drivers will be provided by SODA.
+  - Robust and easy to maintain design which can be used by hetrogeneous csi storage providers with minimal changes to side cars.
+  - Easy to upgrade along with TP CSI driver.
+  - Easy to maintain the side car code as the code-base will be used from kubernetes-csi org and the SODA features will be added to it as a plugin, so it's easy to upgrade side-car as k8s csi spec evolves.
  ### Known Challenges
   - How to determine the plugin capabilitie when hetrogeneous drivers are there with different capabilities.
   
