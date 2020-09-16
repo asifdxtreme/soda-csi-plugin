@@ -15,7 +15,11 @@ This plugin facilitates the provisioning of the Storage using heterogeneous CSI 
  
  
  ### Deployment View
- ![](./Soda-CSI-Plugin.png)
+ ![](./Soda-CSI-Plugin-DeploymentView.png)
  
  ### Call FLows
+ ![](./Soda-CSI-Plugin-CallFLow.png)
  
+ ### Known Challenges
+  - How to determine the plugin capabilitie when hetrogeneous drivers are there with different capabilities.
+  
