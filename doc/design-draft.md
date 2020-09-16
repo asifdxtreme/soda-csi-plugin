@@ -12,7 +12,18 @@ This plugin facilitates the provisioning of the Storage using heterogeneous CSI 
  
  ## Proposed Architecture
  
- 
+ The goal is to make the SODA CSI plugin which can help to use the ThirdParty Storage CSI drivers in SODA way and get all the advantages of SODA frameworks.  
+ This will help the users to use hetrogeneous storage backends using a unified way provided by SODA.
+ ~~~
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: csi-soda-example--block
+provisioner: csi-soda-block                 # This is the provisioner provided by SODA
+parameters:
+  attachMode: rw
+  profile: XXXXXXXXXXXXXXXXXXXXXXXXXXXX     # This profile will help to use the hetrogeneous storage backend in a similar way
+ ~~~
  
  ### Deployment View
  ![](./Soda-CSI-Plugin-DeploymentView.png)
