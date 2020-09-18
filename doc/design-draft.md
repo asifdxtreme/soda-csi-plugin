@@ -26,7 +26,7 @@ parameters:
  ~~~
  
  ### Deployment View
- ![](./Soda-CSI-Plugin-DeploymentView.png)
+ ![](./Soda-CSI-Plugin-typical-design.png)
  
  ### Call FLows
  ![](./Soda-CSI-Plugin-CallFLow.png)
