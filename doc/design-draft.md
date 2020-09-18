@@ -29,10 +29,16 @@ parameters:
  ### Deployment View
  ![](./Soda-CSI-Plugin-typical-design.png)
  
- ### Call FLows
- ![](./Soda-CSI-Plugin-CallFLow.png)
+ ### Call Flows  
+ ![](./Soda-CSI-Plugin-CallFLow.png)  
  
-  
+  A typical call flow for SODA CSI Plug-N-Play mechanism will be:
+   - Once the PVC Object is created by user then soda-csi-provisioner will get a request to provision the Storage.
+   - soda-csi-provisioner will interact with SODA API's to get the profile details and other parameters to determine if the required driver is same as the current driver in a pod.
+   - soda-csi-provisioner updates the SODA API server with the volume provisioning request and gather the required intelligence from SODA about the current provisioning.
+   - soda-csi-provisioner will forward the request to CSI driver in the same pod to do the actual provisioing.
+   
+   
  ### Highlights
   - A simple design which let's user to patch the exsisting Third party CSI drivers deployment whithout any changes to actual CSI driver containers provided by TP vendors.
   - All the side car containers which will be used by TP CSI drivers will be provided by SODA.
