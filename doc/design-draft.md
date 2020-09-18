@@ -46,5 +46,5 @@ parameters:
   - Easy to upgrade along with TP CSI driver.
   - Easy to maintain the side car code as the code-base will be used from kubernetes-csi org and the SODA features will be added to it as a plugin, so it's easy to upgrade side-car as k8s csi spec evolves.
  ### Known Challenges
-  - How to determine the plugin capabilitie when hetrogeneous drivers are there with different capabilities.
+  - How to determine the plugin capabilities when hetrogeneous drivers are there with different capabilities.
   
