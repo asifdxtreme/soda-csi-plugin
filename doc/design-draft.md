@@ -1,13 +1,14 @@
-# SODA-CSI Plugin
+# SODA-CSI Plug-N-Play
 
 This plugin facilitates the provisioning of the Storage using heterogeneous CSI Storage drivers in Kubernetes.
 
 
 ## Goals
- - Make a SODA-CSI plugin which helps to provision and manage the Storage of hetrogeneous Storage providers using the single CSI plugin.
+Make a single CSI Plug-N-Play mechanism which helps to:
+ - Provision and manage the Storage of hetrogeneous Storage providers.
  - Third party CSI drivers should be used directly from Vendors so that SODA/Users need not worry about it's maintenance.
- - The SODA-CSI plugin should use Soda Profile ID to determine which storage vendor drivers need to be used to provision the storage.
- - The SODA-CSI plugin should help users to provision the storage using thrid party drivers and also experience all the features set of SODA.
+ - Use Soda Profile ID to determine which storage vendor drivers need to be used to provision the storage.
+ - Experience all the features set of SODA.
  
  
  ## Proposed Architecture
