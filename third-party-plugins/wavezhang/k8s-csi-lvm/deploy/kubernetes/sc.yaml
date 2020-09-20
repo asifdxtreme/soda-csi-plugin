@@ -1,0 +1,13 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: csi-lvm
+provisioner: csi-lvmplugin
+reclaimPolicy: Delete
+parameters:
+  attachMode: rw
+allowedTopologies:
+- matchLabelExpressions:
+  - key: topology.csi-lvm/zone
+    values:
+    - default
